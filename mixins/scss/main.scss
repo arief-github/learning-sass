@@ -1,0 +1,61 @@
+// membuat fungsi di dalam sass agar styling dapat digunakan secara berulang
+@mixin inline-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+        display: inline-block;
+    }
+}
+
+.header ul {
+    @include inline-list();
+
+    li {
+        background-color: yellowgreen;
+        padding: 1em;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.footer ul {
+    @include inline-list();
+
+    li {
+        padding: 0.4em;
+        background-color: salmon;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+// arguments pada mixins
+@mixin flex-box-style($direction: row, $space-y, $space-x) {
+    display: flex;
+    justify-content: $space-y;
+    align-items: $space-x;
+    flex-direction: $direction;
+}
+
+.container {
+    @include flex-box-style(row-reverse, space-around, center);
+    width: 600px;
+    height: 400px;
+    background-color: #eaeaea;
+
+    .box {
+        width: 60px;
+        height: 60px;
+        background-color: #bada55;
+        text-align: center;
+        line-height: 60px;
+    }
+}

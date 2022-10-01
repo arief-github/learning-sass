@@ -1,0 +1,15 @@
+@use 'mixins';
+
+.header ul {
+    @include mixins.inline-list();
+
+    li {
+        background-color: yellowgreen;
+        padding: 1em;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

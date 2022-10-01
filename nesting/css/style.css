@@ -1,0 +1,27 @@
+.main {
+  font-size: 20px;
+}
+.container .main {
+  background-color: red;
+}
+.main .main-heading {
+  font-size: 2em;
+}
+.main .main-paragraph {
+  font-size: 1.2em;
+}
+.main:hover {
+  background-color: yellow;
+}
+
+.footer {
+  font-size: 14px;
+}
+.footer .footer-heading {
+  color: red;
+  font-size: 1.2em;
+}
+.footer .footer-paragraph {
+  letter-spacing: 1px;
+  font-size: 0.8em;
+}/*# sourceMappingURL=style.css.map */

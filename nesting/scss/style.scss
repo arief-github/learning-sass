@@ -1,0 +1,33 @@
+
+.main {
+    font-size: 20px;
+
+    .container & {
+        background-color: red;
+    }
+
+    & &-heading {
+        font-size: 2em;
+    }
+    & &-paragraph {
+        font-size: 1.2em;
+    }
+
+    &:hover {
+        background-color: yellow;
+    }
+}
+
+.footer {
+    font-size: 14px;
+
+    & &-heading {
+        color: red;
+        font-size: 1.2em;
+    }
+
+    & &-paragraph{
+        letter-spacing: 1px;
+        font-size: 0.8em;
+    }
+}

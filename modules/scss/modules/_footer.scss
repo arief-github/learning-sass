@@ -1,0 +1,15 @@
+@use 'mixins';
+
+.footer ul {
+    @include mixins.inline-list();
+
+    li {
+        padding: 0.4em;
+        background-color: salmon;
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
